@@ -16,7 +16,7 @@ This workshop will start with an introductory presentation on conducting effecti
 
 ## Resources
 
-- Slides from the workshop (pdf)
+- Slides from the workshop [(pdf)](introduction_presentation.pdf) [(pptx)](introduction_presentation.pptx)
 
 - Introduction to git
 - Introduction to pull requests
