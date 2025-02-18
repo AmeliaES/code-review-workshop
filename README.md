@@ -16,6 +16,8 @@ This workshop will start with an introductory presentation on conducting effecti
 
 ## Resources
 
+- [Link to padlet](https://tinyurl.com/code-review-padlet)
+
 - Slides from the workshop [(pdf)](introduction_presentation.pdf) [(pptx)](introduction_presentation.pptx)
 
 - Introduction to git
