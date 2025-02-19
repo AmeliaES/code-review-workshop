@@ -2,7 +2,7 @@
 
 ## Message to reviewer:
 
-> Hi, please can you review `cluster_ukb.py`. I got as far as loading the UK Biobank data, cleaning it, and creating new columns to combine self-diagnosed and ICD-10 diagnoses. The script aims to eventually cluster participants based on their WBC (White Blood Cell count), CRP (C-Reactive Protein), and GlycA (Glycoprotein Acetylation) data to investigate if there is an immune-related subtype of depression. 
+> Hi, please can you review `cluster_ukb.py` (or `cluster_ukb.R`). I got as far as loading the UK Biobank data, cleaning it, and creating new columns to combine self-diagnosed and ICD-10 diagnoses. The script aims to eventually cluster participants based on their WBC (White Blood Cell count), CRP (C-Reactive Protein), and GlycA (Glycoprotein Acetylation) data to investigate if there is an immune-related subtype of depression. 
 
 > The UK Biobank is a large-scale biomedical database and research resource containing in-depth genetic and health information from half a million UK participants. ICD-10 is the International Classification of Diseases, which is a medical classification list by the World Health Organization (WHO). I use it in this script to define some mental health conditions.
 
