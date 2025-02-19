@@ -45,8 +45,8 @@ for date in dates:
         steps = json.load(file)
         for step in steps:
             data_list.append({
-                'dateTime': step[0],
-                'steps': int(step[1])
+                'dateTime': step['dateTime'],
+                'steps': int(step['value'])
             })
 
 data = pd.DataFrame(data_list)
@@ -64,8 +64,9 @@ plt.figure(figsize=(15, 7.5))
 sns.scatterplot(x=data['interval'] / 60, y=data['steps'], alpha=0.5)
 plt.xlabel("Time between data collection (hours)")
 plt.ylabel("Number of steps")
-plt.savefig("Plots/intervals.png", dpi=300)
+# plt.savefig("Plots/intervals.png", dpi=300)
 plt.close()
+plt.show()
 
 # Add up the amount of steps per hour per date
 data['hour'] = data['dateTime'].dt.hour + 1
@@ -94,9 +95,10 @@ def data_summary(x):
 
 # Plot the number of steps per day type
 plt.figure(figsize=(10, 7.5))
-sns.violinplot(x='day_of_week', y='stepsPerDay', data=data_by_day, inner=None, color="deepskyblue4", alpha=0.5)
+sns.violinplot(x='day_of_week', y='stepsPerDay', data=data_by_day, inner=None, alpha=0.5)
 sns.pointplot(x='day_of_week', y='stepsPerDay', data=data_by_day, estimator=np.mean, ci='sd', color='black')
 plt.xlabel("")
 plt.ylabel("Steps per day")
-plt.savefig("Plots/stepsPerDay.png", dpi=300)
+# plt.savefig("Plots/stepsPerDay.png", dpi=300)
+plt.show()
 plt.close()
