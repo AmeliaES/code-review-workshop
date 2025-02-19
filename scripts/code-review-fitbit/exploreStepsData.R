@@ -14,6 +14,7 @@ library(rjson) # for reading in JSON files - steps data from fitbit is json
 library(stringr)
 library(dplyr)
 library(lubridate) # for manipulating dates and times
+library(hms) # for manipulating times
 library(tibble)
 library(ggplot2)
 library(scales) # allows labeling of axes in ggplot to change scientific notation to using commas for big numebrs
