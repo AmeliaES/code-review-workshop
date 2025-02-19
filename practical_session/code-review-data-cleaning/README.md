@@ -1,4 +1,4 @@
-# Code review of `cluster_ukb.py` script
+# Code review of `cluster_ukb` script
 
 ## Message to reviewer:
 
@@ -19,3 +19,5 @@
   * This step involves reading diagnosis data, which includes both self-reported diagnoses and diagnoses coded using ICD-10. We create new columns to combine these two sources of diagnosis information for conditions like Major Depressive Disorder (MDD) and Bipolar Disorder (BD).
 
 > Many thanks for your time, any feedback or suggested changes would be much appreciated.
+
+# Original script written in Python, R script is a translation.
