@@ -9,7 +9,7 @@ This workshop will start with an introductory presentation on conducting effecti
 | Time               | Session                                                                 |
 |--------------------|------------------------------------------------------------------------|
 | 9:45am - 10:00am  | Registration                                                           |
-| 10:00am - 11:00am | Introduction Presentation [([pdf](introduction_presentation.pdf)) ([pptx](introduction_presentation.pptx))] |
+| 10:00am - 11:00am | Introduction Presentation [([pdf](https://raw.githubusercontent.com/AmeliaES/code-review-workshop/main/introduction_presentation.pdf)) ([pptx](https://raw.githubusercontent.com/AmeliaES/code-review-workshop/main/introduction_presentation.pptx))] |
 | 11:00am - 11:30am | Break (free tea/coffee/snacks available)                               |
 | 11:30am - 12:30pm | [Practical Session](practical_session)                                |
 
