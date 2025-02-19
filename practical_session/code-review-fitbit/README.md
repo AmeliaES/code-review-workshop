@@ -16,7 +16,7 @@
 
 > Many thanks for your time, any feedback or suggested changes would be much appreciated.
 
-
+# Original script written in R, then translated to Python.
 
 
 
