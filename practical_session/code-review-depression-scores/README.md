@@ -1,4 +1,4 @@
-# Code review of `dep_scores.R` script
+# Code review of `dep_scores` script
 
 ## Message to reviewer:
 
@@ -22,3 +22,5 @@
   * The script calculates summary statistics (n, mean, standard deviation, median, interquartile range, and percentage of scores above the threshold) for each time point and saves the results to a CSV file.
 
 > For more info and context please visit my GitHub repo here: https://github.com/AmeliaES/ALSPAC_inflam_2022/. Many thanks for your time, any feedback or suggested changes would be much appreciated.
+
+# Original script written in R, then translated to Python.
