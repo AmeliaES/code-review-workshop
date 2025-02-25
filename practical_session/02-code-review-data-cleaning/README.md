@@ -21,3 +21,5 @@
 > Many thanks for your time, any feedback or suggested changes would be much appreciated.
 
 # Original script written in Python, then translated to R.
+
+![Screenshot 2025-02-19 at 16 16 56](https://github.com/user-attachments/assets/36f3ef2e-c4e8-4f5e-a55e-0f1f88667389)
