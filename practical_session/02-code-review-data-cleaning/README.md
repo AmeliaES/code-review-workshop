@@ -20,4 +20,4 @@
 
 > Many thanks for your time, any feedback or suggested changes would be much appreciated.
 
-# Original script written in Python, R script is a translation.
+# Original script written in Python, then translated to R.
