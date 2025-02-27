@@ -57,7 +57,7 @@ data['date'] = data['dateTime'].dt.date
 data['time'] = data['dateTime'].dt.time
 
 # Whats the interval between times?
-data['interval'] = data.groupby('date')['dateTime'].diff().dt.total_seconds() / 60
+data['interval'] = data.groupby('date')['dateTime'].apply(lambda x: x.diff().dt.total_seconds() / 60).fillna(0)
 
 # Plot the interval per steps
 plt.figure(figsize=(15, 7.5))

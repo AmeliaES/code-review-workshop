@@ -5,7 +5,7 @@
 # Find out if there's a relationship with the day, eg. weekday or weekend
 # Find out when during the day am I usually most active
 
-# Explore missing data, could my results be bias because I don't wear my fitbit at certain times in the day?
+# Explore missing data, could my results be biased because I don't wear my fitbit at certain times in the day?
 # Also need to find out what sets the intervals in data collection when I am wearing my fitbit, as i dont think it's every minute...
 
 # ------------------------------
@@ -17,7 +17,7 @@ library(lubridate) # for manipulating dates and times
 library(hms) # for manipulating times
 library(tibble)
 library(ggplot2)
-library(scales) # allows labeling of axes in ggplot to change scientific notation to using commas for big numebrs
+library(scales) # allows labeling of axes in ggplot to change scientific notation to using commas for big numbers
 library(tidyr)
 # ------------------------------
 # Set ggplot theme
@@ -95,6 +95,7 @@ ggplot(data = .) +
        y = "Number of steps")
 )
 dev.off()
+
 # Hard to see a relationship here, also interval may be high when i take the fitbit off for times during the day
 # but even when I am wearing it it looks like it's not collecting data every minute
 # why is there a minus point?
