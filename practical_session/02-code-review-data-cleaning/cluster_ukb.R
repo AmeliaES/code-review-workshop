@@ -44,19 +44,19 @@ str(dataBloods)
 # Rename columns based on UKB descriptions
 colnames(dataBloods) <- UKB_fields$field[match(colnames(dataBloods), UKB_fields$field_id)]
 head(dataBloods)
-str(dataBloods) # 468594 not missing for CRP
+str(dataBloods) 
 
-# Remove people with CRP >= 10 mg/L. First change them to 0, and then NA. This keeps the type numeric.
-dataBloods <- dataBloods %>% mutate(CRP = ifelse(CRP >= 10, NA, CRP))
+# Remove people with CRP greater than or equal to 10 mg/L.
+dataBloods <- dataBloods %>% mutate(CRP = ifelse(CRP < 10, NA, CRP))
 
 # Check that the max is below 10
 max(dataBloods$CRP, na.rm = TRUE)
-str(dataBloods) # 449141 not missing for CRP
+str(dataBloods) 
 
 # Remove NA values, ie. subset dataframe to complete cases only
 dataBloods <- dataBloods %>% drop_na()
 head(dataBloods)
-str(dataBloods) # 436,864 not missing for all cols
+str(dataBloods) 
 
 # -----------------------------------------
 # Read in and tidy data of GlycA measures in subset of sample (this file is slow to load)

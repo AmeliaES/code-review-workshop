@@ -67,20 +67,20 @@ dataBloods.info()
 # Rename columns based on UKB descriptions
 dataBloods.rename(columns=UKB_fields.set_index('field_id')['field'], inplace = True)
 dataBloods.head()
-dataBloods.info() # 468594 not missing for CRP
+dataBloods.info()
 
-# Remove people with CRP >= 10 mg/L. First change them to 0, and then NA. This keeps the type numeric.
-dataBloods.loc[dataBloods['"CRP"'] >= 10, '"CRP"'] = 0
+# Remove people with CRP greater than or equal to 10 mg/L. First change them to 0, and then NA. This keeps the type numeric.
+dataBloods.loc[dataBloods['"CRP"'] <= 10, '"CRP"'] = 0
 dataBloods['"CRP"'].replace(0, np.NaN, inplace = True)
 
 # Check that the max is below 10
 dataBloods['"CRP"'].max()
-dataBloods.info() # 449141 not missing for CRP
+dataBloods.info() 
 
 # Remove NA values, ie. subset dataframe to complete cases only
 dataBloods.dropna(axis = 0, how = 'any', inplace = True)
 dataBloods.head()
-dataBloods.info() # 436,864 not missing for all cols
+dataBloods.info() 
 
 # -----------------------------------------
 # Read in and tidy data of GlycA measures in subset of sample (this file is slow to load)
